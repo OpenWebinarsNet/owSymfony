@@ -1,0 +1,8 @@
+services:
+#    ong.example:
+#        class: OngBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
+    ong.user:
+        class: OngBundle\Services\UserService
+        arguments: ["@doctrine.orm.entity_manager"]
+

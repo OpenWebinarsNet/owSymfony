@@ -1,0 +1,9 @@
+{% extends '::base.html.twig' %}
+{% block body %}
+    {% set variable = "twig var" %}
+    {% set array = [{"clave1": "valor1"}] %}
+    {{ texto }}
+    {% if array|length > 1 %}
+        {{ array[0].clave1 }}
+    {% endif %}
+{% endblock %}

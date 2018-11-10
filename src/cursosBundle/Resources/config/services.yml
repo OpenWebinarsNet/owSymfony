@@ -1,0 +1,7 @@
+services:
+#    cursos.example:
+#        class: cursosBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+  cursos.curso:
+    class: cursosBundle\Services\CourseService
+    arguments: ["@doctrine.orm.entity_manager"]

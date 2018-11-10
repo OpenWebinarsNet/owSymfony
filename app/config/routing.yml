@@ -1,0 +1,23 @@
+cursos:
+    resource: "@cursosBundle/Resources/config/routing.yml"
+    prefix:   /cursos
+
+alumnos:
+    resource: "@alumnosBundle/Resources/config/routing.yml"
+    prefix:   /
+
+test:
+    resource: "@TestBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ong:
+    resource: "@OngBundle/Resources/config/routing.yml"
+    prefix:   /ong
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc

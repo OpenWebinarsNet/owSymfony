@@ -1,0 +1,23 @@
+cursos_homepage:
+    path:     /
+    defaults: { _controller: cursosBundle:Default:index }
+
+get:
+    path:     /course/{id}
+    defaults: { _controller: cursosBundle:Default:getCourse }
+    methods:  GET
+
+post:
+    path:     /course
+    defaults: { _controller: cursosBundle:Default:postCourse }
+    methods:  POST
+
+put:
+    path:     /course/{id}
+    defaults: { _controller: cursosBundle:Default:putCourse }
+    methods:  PUT
+
+delete:
+    path:     /course/{id}
+    defaults: { _controller: cursosBundle:Default:deleteCourse }
+    methods:  DELETE

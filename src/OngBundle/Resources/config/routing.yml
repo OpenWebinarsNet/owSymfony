@@ -1,0 +1,27 @@
+ong_default:
+    path:     /
+    defaults: { _controller: OngBundle:Default:index }
+
+ong_list:
+    path:     /list
+    defaults: { _controller: OngBundle:Default:list }
+
+login:
+    path:     /login
+    defaults: { _controller: OngBundle:Default:login }
+    methods:  POST
+
+putTest:
+    path:     /set/{_test}
+    defaults: { _controller: OngBundle:Default:setTest }
+    methods:  PUT
+
+postTest:
+    path:     /create
+    defaults: { _controller: OngBundle:Default:create }
+    methods:  POST
+
+deleteTest:
+    path:     /delete/{id}
+    defaults: { _controller: OngBundle:Default:delete }
+    methods:  DELETE

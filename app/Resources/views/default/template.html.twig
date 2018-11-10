@@ -1,0 +1,11 @@
+{% extends "::base.html.twig" %}
+{% block body %}
+
+    {{parent()}}
+    {{texto}}
+    {% set arrayt = [{"prueba": "cosa"},{"prueba2": "cosa 2"}] %}
+    {{arrayt[0].prueba}}
+    {%if arrayt|length > 1%}
+        {{texto}}
+    {%endif%}
+{%endblock%}
